@@ -29,7 +29,7 @@ A regex is a literal that must be wrapped using the `/` character. We will use t
 The characters `^` and `$` are considered as anchors. They act as start and end markers.
 
 - `^` character signifies the start of a regular expression exclusive.
-- `$` character signifies the end of a regular expression exclusive.
+- `$` character signifies the end of a regular expression exclusive. 
 
 #### For Example: 
 
@@ -51,6 +51,8 @@ They are inherently greedy, which we will describe in more detail in (#greedy-an
 ### Grouping and Capturing
 
 The main way of grouping a regular expression into subexpression is through the use of parentheses (`()`). 
+
+#
 
 ### Bracket Expressions
 
