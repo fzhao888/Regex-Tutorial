@@ -2,9 +2,9 @@
 
 Introductory paragraph (replace this with your text)
 
-## Summary
+## Summary 
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+A regex is a literal that must be wrapped using the `/` character. We will use the regular expression `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/` to match emails as the example to help us understand regular expression.  This tutorial will give a detailed explanation of what a specific component of a regular expression.  In addition, it will also accomplish this using the the regular expression `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`.
 
 ## Table of Contents
 
@@ -21,8 +21,6 @@ Briefly summarize the regex you will be describing and what you will explain. In
 - [Look-ahead and Look-behind](#look-ahead-and-look-behind)
 
 ## Regex Components
-
-A regex is a literal that must be wrapped using the `/` character. We will use the regular expression `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/` to match emails as the example to help us understand regular expression. Its components are described as follows.
 
 ### Anchors
 
