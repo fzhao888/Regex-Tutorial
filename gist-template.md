@@ -62,7 +62,17 @@ Here are some of the most common character class:
 - `/w` - Matches any alphanumeric character including the underscore character, evaluates to `[A-Za-z0-9_]`.
 - `/s` - Matches whitespace, which includes, the single whitespace character, tabs, and line breaks. 
 
+#### For Example:
+In our email example, we see `[\da-z\.-]+`, which includes `/d` representing `0-9`.
+
 ### Flags
+
+Flags are placed after the closing slash to denote additional functionality or limits for the regex.
+
+Some common flags include:
+- `g` - Global search, the regular expression will be tested for multiple matches throughout the search string
+- `i` - Case-insensitive search
+- `m` - Multi-line search
 
 ### Grouping and Capturing
 
