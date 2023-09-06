@@ -45,7 +45,11 @@ Quantifiers are inherently greedy, which we will describe in more detail in (#gr
 
 ### OR Operator
 
-The OR operator (`|`) allows for OR logic within grouping contructs. 
+The OR operator (`|`) allows for OR logic to be used in regular expressions.  It is especially helpful dealing with grouping contructs.
+
+#### For Example: 
+ A good example of using the OR operator would be to with we only wanted e,f, or g but limited to just efg.  This use of the OR operator would look something like: `(e|f|g)`.  Essentially, the OR operator gives us more flexibility. 
+
 
 ### Character Classes
 
