@@ -39,10 +39,13 @@ The `/` at the beginning and end are the regular expression markers to denote th
 ### Quantifiers
 
 Quantifiers limit the number of times and characters that can be matched.  
-For example, `{2,6}`, towards the end of our example regular expression, means our matched pattern's length must be between 2 and 6 characters long.  
-They are inherently greedy, which we will describe in more detail in (#greedy-and-lazy-match) .
+For example, `([a-z\.]{2,6}`, towards the end of our example regular expression, means our subexpression's matched pattern (`([a-z\.]`) length must be between 2 and 6 characters long.  This makes sense because the top level domain name generally appear towards the end of an email.
+
+Quantifiers are inherently greedy, which we will describe in more detail in (#greedy-and-lazy-match) .
 
 ### OR Operator
+
+The OR operator (`|`) allows for OR logic within grouping contructs. 
 
 ### Character Classes
 
@@ -50,14 +53,17 @@ They are inherently greedy, which we will describe in more detail in (#greedy-an
 
 ### Grouping and Capturing
 
-The main way of grouping a regular expression into subexpression is through the use of parentheses (`()`). 
+The main way of grouping a regular expression into subexpression is through the use of parentheses (`()`). Grouping constructs allow us to pattern match different sections to fulfill different requirements. 
 
-####
+#### For Example: 
+In our email example, we have three different groups as followed: `([a-z0-9_\.-]+)` , `([\da-z\.-]+)`, and `([a-z\.]{2,6})`.
 
 ### Bracket Expressions
 
 Anything inside the square brackets (`[]`) represents what the range of characters we want to match.  
 Bracket expression are also known as positive character group because they describe the characters we want to include. The hyphen (`-`) character signifies we are dealing with a range of characters.
+
+Capturing groups allow the matched characters to be re-used.  
 
 #### For Example:
 
@@ -77,7 +83,7 @@ As we stated earlier, quantifiers are inherently greedy.  A greedy match is a ma
     - 2) `{n}` - Matches the pattern at least n times
     - 3) `{n,x}` - Matches the pattern a minimum of n times and a maximum of x times. 
 
-#### For example,
+#### For Example:
 `[a-z0-9_\.-]+` means we must have at least one of this pattern in our email.  In simpler terms, we must have at least one lowercase, numeric, underscore, period, or hyphen character in our email.
 
 
