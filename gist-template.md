@@ -99,4 +99,8 @@ As we stated earlier, quantifiers are inherently greedy.  A greedy match is a ma
 
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+  If you have any questions, please here is my contact info:
+
+  GitHub: fzhao888
+
+  Email: frank.zhao93@gmail.com
