@@ -52,7 +52,7 @@ They are inherently greedy, which we will describe in more detail in (#greedy-an
 
 The main way of grouping a regular expression into subexpression is through the use of parentheses (`()`). 
 
-###
+####
 
 ### Bracket Expressions
 
