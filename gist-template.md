@@ -53,6 +53,15 @@ The OR operator (`|`) allows for OR logic to be used in regular expressions.  It
 
 ### Character Classes
 
+A character class defines a set of characters.
+
+Here are some of the most common character class:
+
+- `.`  - Matches any character expect the newline character
+- `/d` - Matches any numeric value, evaluates to `0-9`.
+- `/w` - Matches any alphanumeric character including the underscore character, evaluates to `[A-Za-z0-9_]`.
+- `/s` - Matches whitespace, which includes, the single whitespace character, tabs, and line breaks. 
+
 ### Flags
 
 ### Grouping and Capturing
