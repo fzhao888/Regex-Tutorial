@@ -1,6 +1,6 @@
-# Title (replace with your title)
+# Regex Tutorial
 
-Introductory paragraph (replace this with your text)
+This tutorial provides a solid introduction for a web development student who wants a tutorial explaining a specfic regex, so that they can understand the search pattern the regex defines. 
 
 ## Summary 
 
