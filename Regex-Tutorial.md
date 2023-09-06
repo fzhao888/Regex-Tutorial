@@ -46,7 +46,7 @@ Quantifiers are inherently greedy, which we will describe in more detail in (#gr
 The OR operator (`|`) allows for OR logic to be used in regular expressions.  It is especially helpful dealing with grouping contructs.
 
 #### For Example: 
- A good example of using the OR operator would be to with we only wanted e,f, or g but limited to just efg.  This use of the OR operator would look something like: `(e|f|g)`.  Essentially, the OR operator gives us more flexibility. 
+ A good example of using the OR operator would be to with we only wanted e,f, or g but limited to just efg.  This use of the OR operator would look something like: `(e|f|g)`.  Essentially, the OR operator gives us more flexibility. The OR operator was not used in our email regular expression example.
 
 
 ### Character Classes
@@ -72,6 +72,8 @@ Some common flags include:
 - `i` - Case-insensitive search
 - `m` - Multi-line search
 
+Flags were not used in our email regular expression example.
+
 ### Grouping and Capturing
 
 The main way of grouping a regular expression into subexpression is through the use of parentheses (`()`). Grouping constructs allow us to pattern match different sections to fulfill different requirements. 
@@ -88,7 +90,7 @@ Capturing groups allow the matched characters to be re-used.
 
 #### For Example:
 
-The possible pool of characters for `[a-z0-9_\.-]` would evalute to all lowercase, numeric, underscore, period, and hyphen characters.
+In our example, the possible pool of characters for `[a-z0-9_\.-]` would evalute to all lowercase, numeric, underscore, period, and hyphen characters.
 
 
 ### Greedy and Lazy Match
@@ -110,9 +112,17 @@ As we stated earlier, quantifiers are inherently greedy.  A greedy match is a ma
 
 ### Boundaries
 
+Boundaries are used to match the words on either side of a desired word. It is usually denoted with the `/b` symbol.  For example, the `/bwide/b` could match `world wide web`.
+We did not have any boundaries in our email example.
+
 ### Back-references
 
+Back-references are used to match pairs.  They match the same text previously matched by a capturing group.  For example, matching HTML opening and closing tags.  Our email example did not have any back-references. 
+
 ### Look-ahead and Look-behind
+Look-ahead and look-behind are both regular expression assertions.  A regular expression assertion is a regular expression that does not consume any of the characters, but instead returns if it matched or not matched.  
+
+The look-ahead assertion is usually denoted by `(?=pattern)` or `(?=pattern)`, while the look-behind assertion is usually denoted by `(?<=pattern)` or `(?<!pattern)`.  Our email example does not use any sort of look-ahead or look-behind assertion.
 
 ## Author
 
